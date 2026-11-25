@@ -8,11 +8,11 @@ import time
 import os
 print("get directory", os.getcwd())
 # import model iris
-with open("model/generate_iris.pkl", 'rb') as file:  
+with open('model/generate_iris.pkl', 'rb') as file:  
     loaded_model_iris = pickle.load(file)
 
 # import model heart_disease
-with open("model/generate_heart_disease.pkl", 'rb') as file:  
+with open('model/generate_heart_disease.pkl', 'rb') as file:  
     loaded_model_heart = pickle.load(file)
 
 # set page config
@@ -45,7 +45,7 @@ def iris():
     Data obtained from the [iris dataset](https://www.kaggle.com/uciml/iris) by UCIML. 
     """)
     # Display image
-    st.image("image/iris.JPG", width=500)
+    st.image('image/iris.JPG', width=500)
     # Input features
     sepal_length = st.sidebar.number_input("Sepal Length (cm)", min_value=0.0, max_value=10.0, value=5.0)
     sepal_width = st.sidebar.number_input("Sepal Width (cm)", min_value=0.0, max_value=10.0, value=3.5, key="sepal_width")
@@ -77,7 +77,7 @@ def heart():
     Data obtained from the [Heart Disease dataset](https://archive.ics.uci.edu/dataset/45/heart+disease) by UCIML. 
     """)
     st.sidebar.header('User Input Features:')
-    st.image("image/heart-disease.jpg", width=500)
+    st.image('image/heart-disease.jpg', width=500)
     # Collects user input features into dataframe
     uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
     if uploaded_file is not None:
