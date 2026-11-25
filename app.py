@@ -11,7 +11,7 @@ print("get directory", os.getcwd())
 loaded_model_iris = pickle.load(open('model/generate_iris.pkl', 'rb'))
 
 # import model heart_disease
-loaded_model_heart = pickle.load(open('model/generate_heart_disease.pkl', 'rb'))
+loaded_model_heart = pickle.load(open('model/model.pkl', 'rb'))
 
 # set page config
 st.set_page_config(page_title="Halaman Modelling", layout="wide", initial_sidebar_state="auto")
