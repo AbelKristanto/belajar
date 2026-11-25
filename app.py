@@ -43,7 +43,7 @@ def iris():
     Data obtained from the [iris dataset](https://www.kaggle.com/uciml/iris) by UCIML. 
     """)
     # Display image
-    st.image('image/iris.JPG', width=500)
+    st.image('model/iris.JPG', width=500)
     # Input features
     sepal_length = st.sidebar.number_input("Sepal Length (cm)", min_value=0.0, max_value=10.0, value=5.0)
     sepal_width = st.sidebar.number_input("Sepal Width (cm)", min_value=0.0, max_value=10.0, value=3.5, key="sepal_width")
