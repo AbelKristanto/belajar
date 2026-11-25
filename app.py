@@ -6,7 +6,7 @@ from PIL import Image
 import numpy as np
 import time
 import os
-print("get directory", os.getcwd())
+
 # import model iris
 loaded_model_iris = pickle.load(open('model/generate_iris.pkl', 'rb'))
 
